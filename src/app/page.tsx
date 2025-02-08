@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card,  CardContent } from "@/components/ui/card"
 import FeaturedProjects from "@/components/featured-projects";
-import WorkExpirience from "@/components/work-expirience";
+import WorkExperience from "@/components/work-expirience";
 import BlogSection from "@/components/blog-section";
 import HeroProfile from "@/components/hero-profile";
 import Education from "@/components/education";
@@ -50,6 +50,33 @@ const projects = [
         githubLink: ""
     }
 ]
+const posts = [
+    {
+        title: "How to Build a Blog with React and Firebase",
+        description: "Learn how to build a blog using React for the frontend and Firebase for the backend.",
+        image: "/placeholder.svg?height=200&width=400",
+        date: "June 1, 2021",
+        link: "",
+        tags: ["React", "Firebase", "JavaScript"]
+
+    },
+    {
+        title: "10 Tips for Improving Your Website's Accessibility",
+        description: "Discover 10 tips for making your website more accessible to users with disabilities.",
+        image: "/placeholder.svg?height=200&width=400",
+        date: "May 15, 2021",
+        link: "",
+        tags: ["Accessibility", "Web Design", "User Experience"]
+    },
+    {
+        title: "Getting Started with Tailwind CSS",
+        description: "Learn how to get started with Tailwind CSS and create beautiful designs with ease.",
+        image: "/placeholder.svg?height=200&width=400",
+        date: "April 27, 2021",
+        link: "",
+        tags: ["Tailwind CSS", "CSS", "Web Design"]
+    }
+]
 
 
 export default function Home() {
@@ -68,10 +95,12 @@ export default function Home() {
           />
         </section>
         <section id="experience" className="container">
-          <WorkExpirience />
+          <WorkExperience />
         </section>
         <section id="blog" className="container py-24">
-          <BlogSection />
+          <BlogSection
+              posts={posts}
+          />
         </section>
         {/* Contact Section */}
         <section id="contact" className="container">
