@@ -25,9 +25,9 @@ export default function RootLayout({
                 <Header />
                 <main className="flex justify-center">{children}</main>
                 <footer className="border-t bg-background/30 backdrop-blur-sm">
-                    <div className="container flex items-center justify-between py-6">
+                    <div className="container flex items-center justify-center py-6">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} Your Name. All rights reserved.
+                            © {new Date().getFullYear()} Elisio Cabral Sa. All rights reserved.
                         </p>
                         <div className="flex space-x-4">{/* Add social media icons here */}</div>
                     </div>
