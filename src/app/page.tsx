@@ -310,7 +310,7 @@ export default function Home() {
           <Card className="max-w-md mx-auto">
             <CardContent className="pt-6">
               <p className="mb-4 text-center">
-                I'm always open to new opportunities and collaborations. Feel free to reach out!
+                I&#39;m always open to new opportunities and collaborations. Feel free to reach out!
               </p>
               <Button className="w-full" asChild>
                 <a href="mailto:your.email@example.com">Email Me</a>
